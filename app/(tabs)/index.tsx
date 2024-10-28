@@ -14,12 +14,30 @@ export default function index(){
                 <Text style={styles.heading}>Your Move</Text>
             </View>
 
-            <Link className="card" href="/game" asChild>
+            <Link href="/game" asChild>
                 <Card onPress={GameSelected}>                
                     <Card.Title title="John Smith" subtitle="100 - 150">
                     </Card.Title>
                 </Card>
             </Link>
+
+            
+            <View>
+                <Text style={styles.heading}>Their Move</Text>
+            </View>
+            <Link href="/game" asChild>
+                <Card onPress={GameSelected}>                
+                    <Card.Title title="Jane Smith" subtitle="100 - 150">
+                    </Card.Title>
+                </Card>
+            </Link>
+            <Link href="/game" asChild>
+                <Card onPress={GameSelected}>                
+                    <Card.Title title="Jen Smith" subtitle="100 - 150">
+                    </Card.Title>
+                </Card>
+            </Link>
+
         </View>
     );
 }
